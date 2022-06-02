@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam_Result</title>
+</head>
+<body>
+    <form name="myform"
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="grammar">Grammar</label>
+        <input type="number" name="grammar" id="grammar"><br><br>
+        <label for="reading">Reading</label>
+        <input type="number" name="reading" id="reading"><br><br>
+        <label for="ls">Listening</label>
+        <input type="number" name="ls" id="ls"><br><br>
+        <button type="button" onclick="result()">Result</button>
+    </form>
+    <script>
+        function result() 
+        {
+            // hello alert
+            let name = document.myform.name.value;
+            console.log(name);
+            let grammar = document.myform.grammar.value;
+            console.log(grammar);
+            let reading = document.myform.reading.value;
+            console.log(reading);
+            let ls = document.myform.ls.value;
+            console.log(ls);
+
+            if (grammar >=30 && reading>=30 && ls>=30){
+                document.write("<h1>"+name+" is Pass</h1>");
+            }else{
+                document.write("<h1>"+name+"is fail</h1>");
+            }
+            if(grammar >50 || reading >50 || ls > 50){
+                document.write("<h1>"+name+"is pass with distinction</h1>");
+            }
+            
+            
+
+        }
+    </script>
+</body>
+</html>

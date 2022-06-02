@@ -1,0 +1,67 @@
+*{
+    margin: 0ox;
+    padding: 0px;
+}
+@font-face{
+    font-family: Losber;
+    src: url(../Fonts/Sacramento-Regular.ttf);
+
+}
+.logo{
+    width: 15%;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+.shop_name{
+    position: relative;
+    top: -70px;
+    left: 115px;
+    font-family: Losber;
+    font-size: x-large;
+    font-weight: bold;
+    
+}
+.nav_brand{
+    display: inline-block;
+
+}
+.navbar ul{
+    float: right;
+}
+.navbar ul li{
+    display: inline;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+    color: rgb(209, 33, 209);
+    letter-spacing: 5px;
+    transition-duration: .5s;
+}
+
+.cart{
+    position: relative;
+    top: -7px;
+    left: -5px;
+    background-color: rgb(39, 6, 6);
+    color: rgb(236, 225, 225);
+    padding: 3px 5px;
+    border-radius: 50%;
+}
+/* .nav_brand img{
+    position:relative;
+    padding: 3px 5px;
+    border-radius: 50%;
+} */
+.navbar{
+    height: 90px;
+}
+.background{
+    width: 100%;
+}

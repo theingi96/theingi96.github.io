@@ -1,0 +1,97 @@
+h1{
+    color: rgb(6, 6, 80);
+    /* color: 2a3b2c; */
+
+    text-align: center;
+    text-transform: uppercase;
+
+}
+small{
+    color: blue;
+    display: block;
+    text-align: left;
+    text-transform: lowercase;
+}
+/* Universal selector */
+*{
+    color: blue;
+}
+p{
+    color: black;
+}
+/* Tag Element Selector */
+span{
+    color: brown;
+}
+/* Attribute Selector */
+a[target="blank"]
+{
+    color: blueviolet;
+}
+
+/* id selector */
+#id_selector{
+    color: aqua;
+    text-indent: 20px;
+    text-align: justify;
+}
+/* class selector */
+.one{
+    color: brown;
+    text-transform: capitalize;
+    letter-spacing: 10px;
+}
+
+
+/* Grid */
+.gridone div,.gridtwo div,.gridthree div,.gridfour div,.gridfive div,.gridsix div{
+    padding: 20px;
+    color: red;
+    text-align: center;
+}
+
+.gridone, .gridtwo,.gridthree,.gridfour,.gridfive,.gridsix{
+    display:grid;
+    grid-template-columns:auto auto auto;
+}
+.gridtwo{
+    grid-column-gap: 40px;
+}
+.gridthree{
+    grid-row-gap: 50px
+}
+.gridfour{
+    grid-gap:50px
+}
+
+.columnadd{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.rowadd{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/* Position */
+.relative_parent{
+    border: 1px solid blue;
+    width: 1000px;
+    height: 500px;
+}
+.relative{
+    border: 1px solid green;
+    width: 500px;
+    height: 250;
+}
+.absolute_parent{
+    position: relative;
+    border: 1px solid yellow;
+    width: 1000px;
+    height: 500px;
+}
+.absolute{
+    border: 1px solid blue;
+    width: 300px;
+    height: 50px;
+}
